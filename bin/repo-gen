@@ -1,10 +1,12 @@
 #!/bin/bash
 
 dir=`dirname $0`/..
+user=`cat $dir/user.txt`
 mkdir $1
 cd $1
 git init
-echo "Copyright `date '+%Y'` `cat $dir/user.txt`" >> ./LICENSE.txt
+git remote add origin git@github.com:$user/$1.git
+echo "Copyright `date '+%Y'` $user" >> ./LICENSE.txt
 cat $dir/license-template.txt >> ./LICENSE.txt
 echo "# $1" > ./README.md
 
