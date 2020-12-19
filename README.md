@@ -1,5 +1,5 @@
 # git-repo-generator
-This is a script for making a git repository, LICENSE.txt, and README.md
+This is a script for making git repositories, LICENSE.txt, README.md, and remote repository URL.
 
 ### Usage
 **install**
